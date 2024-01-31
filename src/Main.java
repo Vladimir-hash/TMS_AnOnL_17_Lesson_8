@@ -2,6 +2,10 @@ import figures.Circle;
 import figures.Figures;
 import figures.Rectangle;
 import figures.Triangle;
+import task2.Accountant;
+import task2.Director;
+import task2.Profession;
+import task2.Worker;
 
 import java.lang.reflect.Array;
 
@@ -36,5 +40,11 @@ public class Main {
         }
         System.out.println(sum);
 
+
+
+        Profession[] professions = {new Director(), new Accountant(), new Worker()};
+        for (Profession prof : professions) {
+            prof.getProfession();
+        }
     }
 }

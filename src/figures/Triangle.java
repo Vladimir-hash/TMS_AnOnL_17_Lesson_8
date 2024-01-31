@@ -1,8 +1,11 @@
 package figures;
 
 public class Triangle extends Figures{
-    public Triangle(int firstSide, int secondSide, int thirdSide ) {
-        super(firstSide, secondSide, thirdSide);
+    private double firsSide, secondSide, thirdSide;
+    public Triangle(double firstSide, double secondSide, double thirdSide ) {
+        this.firsSide = firstSide;
+        this.secondSide = secondSide;
+        this.thirdSide = thirdSide;
     }
     @Override
     public double perimentr() {
@@ -11,7 +14,7 @@ public class Triangle extends Figures{
 
     @Override
     public double square() {
-        int demiRadius = (this.firsSide + this.secondSide + this.thirdSide) / 2;
+        double demiRadius = (this.firsSide + this.secondSide + this.thirdSide) / 2;
         double result = Math.sqrt(demiRadius * (demiRadius - this.firsSide)
                 * (demiRadius - this.secondSide ) * (demiRadius - this.thirdSide));
         return result;
