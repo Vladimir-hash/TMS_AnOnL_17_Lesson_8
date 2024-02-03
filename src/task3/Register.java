@@ -19,10 +19,9 @@ public  class Register {
     }
 
     public void displayAllDocuments() {
-        System.out.println("Список документов в регистре:");
+        System.out.println("List of documents:\n");
         for (int i = 0; i < documentProps; i++) {
             documents[i].getDisplayInfo();
-            System.out.println("-------------");
         }
     }
 }
