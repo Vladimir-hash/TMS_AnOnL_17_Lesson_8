@@ -3,12 +3,6 @@ package task3;
 
 import java.util.Date;
 
-//3) Финансовая накладная
-//Содержит поля:
-//        - Итоговая сумма за месяц
-//   - Дата документа
-//   - Номер документа
-//   - Код департамента
 public class FinInvoice extends Document{
     int perMonthValue;
     String departmentCode;
@@ -27,6 +21,11 @@ public class FinInvoice extends Document{
 
     public Date getDate() {
         return documentData;
+    }
+    @Override
+    void getDisplayInfo() {
+        System.out.println( "Document number: " + getDocNumber() + ": \n Date: " + getDate() + ". Per month value: " + perMonthValue + ". Department code: " + departmentCode);
+
     }
 
 }

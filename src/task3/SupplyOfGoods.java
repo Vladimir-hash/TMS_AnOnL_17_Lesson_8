@@ -20,5 +20,10 @@ public class SupplyOfGoods extends Document{
     public Date getDate() {
         return documentData;
     }
+    @Override
+    void getDisplayInfo() {
+        System.out.println("Document number: " + getDocNumber() + ": \n Date: " + getDate() + ". Value of goods: " + valueOfGoods + ". Type of goods: " + typeOfGoods);
+
+    }
 }
 

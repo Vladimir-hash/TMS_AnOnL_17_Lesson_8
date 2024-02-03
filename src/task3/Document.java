@@ -58,5 +58,8 @@ import java.util.Date;
      public Date getDate() {
          return documentData;
      }
+
+     abstract void getDisplayInfo();
+
  }
 

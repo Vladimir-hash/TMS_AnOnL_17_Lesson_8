@@ -20,4 +20,8 @@ public class EmployeesContract extends Document  {
     public Date getDate() {
         return documentData;
     }
+    @Override
+     void getDisplayInfo() {
+            System.out.println("Document number: " + getDocNumber() + ":\n Date: " + getDate() + ". Date of the contract ending: " + contractEnding + ". Employee's name: " + name);
+    }
 }

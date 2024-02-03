@@ -44,7 +44,7 @@ public class Main {
 
         Profession[] professions = {new Director(), new Accountant(), new Worker()};
         for (Profession prof : professions) {
-            prof.getProfession();
+            prof.currentProfession();
         }
     }
 }

@@ -1,7 +1,10 @@
 package task2;
 
 public class Accountant implements Profession{
-    public void getProfession() {
-        System.out.println("I'm accountant");
+
+    @Override
+    public void currentProfession() {
+        String profession = "Accountant";
+        System.out.println(profession);
     }
 }

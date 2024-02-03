@@ -5,7 +5,8 @@ package task2;
    должности и имплементировать этот метод в созданные классы.
  */
 public class Director implements Profession{
-    public void getProfession() {
-        System.out.println("I'm director");
+    public void currentProfession() {
+        String profession = "Director";
+        System.out.println(profession);
     }
 }
